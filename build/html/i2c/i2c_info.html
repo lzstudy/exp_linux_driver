@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.3寸TFTLCD液晶屏V2 240*240 &mdash; linux_driver v0.0.1 文档</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="I2C命令行调试" href="i2c_dbg.html" />
+    <link rel="prev" title="I2C调试资源" href="i2c_res.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> linux_driver
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">I2C子系统</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="i2c_res.html">I2C调试资源</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.3寸TFTLCD液晶屏V2 240*240</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i2c_dbg.html">I2C命令行调试</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Input子系统</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../input/index.html">Input子系统</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">linux_driver</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">I2C子系统</a> &raquo;</li>
+      <li>1.3寸TFTLCD液晶屏V2 240*240</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/i2c/i2c_info.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tftlcdv2-240-240">
+<h1>1.3寸TFTLCD液晶屏V2 240*240<a class="headerlink" href="#tftlcdv2-240-240" title="永久链接至标题"></a></h1>
+<section id="id1">
+<h2>资料链接<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<section id="id2">
+<h3>模块使用资料<a class="headerlink" href="#id2" title="永久链接至标题"></a></h3>
+<ul class="simple">
+<li><p>资料链接：<a class="reference external" href="https://pan.baidu.com/s/17xa56rYprRqm8r9dsHjp7A">https://pan.baidu.com/s/17xa56rYprRqm8r9dsHjp7A</a></p></li>
+<li><p>提取码：bxfb</p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>产品讨论帖<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
+<ul class="simple">
+<li><p>1.3寸TFTLCD液晶屏V2模块240*240产品讨论贴: <a class="reference external" href="http://www.openedv.com/thread-329015-1-1.html">http://www.openedv.com/thread-329015-1-1.html</a></p></li>
+</ul>
+</section>
+</section>
+<section id="id4">
+<h2>产品图片<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
+<ul class="simple">
+<li><p>1.3寸TFTLCD液晶屏V2模块240*240主图如下所示</p></li>
+</ul>
+<figure class="align-default" id="id8">
+<span id="pic-major-1-3tftlcd"></span><img alt="i2c/media/1_3TFTLCD.png" src="i2c/media/1_3TFTLCD.png" />
+<figcaption>
+<p><span class="caption-text">1.3寸TFTLCD液晶屏V2模块240*240实物图正面</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id9">
+<span id="pic-major-1-3tftlcdb"></span><img alt="i2c/media/1_3TFTLCDb.png" src="i2c/media/1_3TFTLCDb.png" />
+<figcaption>
+<p><span class="caption-text">1.3寸TFTLCD液晶屏V2       模块240*240实物图背面</span><a class="headerlink" href="#id9" title="永久链接至图片"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id5">
+<h2>购买方式<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
+<ul class="simple">
+<li><p>正点原子官方淘宝店：<a class="reference external" href="https://openedv.taobao.com">https://openedv.taobao.com</a></p></li>
+</ul>
+</section>
+<section id="id6">
+<h2>产品问题答疑<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
+<ul class="simple">
+<li><p>阿里旺旺：<a class="reference external" href="https://openedv.taobao.com">https://openedv.taobao.com</a> 上淘宝直接一对一咨询技术。</p></li>
+<li><p>开源电子网【论坛】：<a class="reference external" href="http://www.openedv.com/forum.php">http://www.openedv.com/forum.php</a></p></li>
+<li><p>QQ群：<a class="reference external" href="http://www.openedv.com/forum.php">http://www.openedv.com/forum.php</a>   点击首页“官方QQ群”即可加入最新群。</p></li>
+<li><p>微信群：<a class="reference external" href="http://www.openedv.com/forum.php">http://www.openedv.com/forum.php</a> 点击首页“微信群”即可加入最新群。</p></li>
+</ul>
+</section>
+<section id="id7">
+<h2>关于正点原子<a class="headerlink" href="#id7" title="永久链接至标题"></a></h2>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><span class="xref std std-ref">公司简介</span></div>
+<div class="line"><span class="xref std std-ref">联系方式</span></div>
+</div>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="i2c_res.html" class="btn btn-neutral float-left" title="I2C调试资源" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="i2c_dbg.html" class="btn btn-neutral float-right" title="I2C命令行调试" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, zw.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

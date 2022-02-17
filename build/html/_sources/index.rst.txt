@@ -1,20 +1,24 @@
-.. linux_driver documentation master file, created by
-   sphinx-quickstart on Sun Jan 30 10:46:58 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Linux驱动经验, created by 2021-12-21 子午
 
-Welcome to linux_driver's documentation!
+Linux驱动经验文档
 ========================================
 
 .. toctree::
+   :maxdepth: 3
+   :titlesonly:   
+
+   i2c/index  
+
+
+.. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Input子系统
+   :titlesonly:  
+
+   input/index 
 
 
+   
+   
+   
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
