@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>I2C命令行调试 &mdash; linux_driver v0.0.1 文档</title>
+  <title>I2C调试 &mdash; linux_driver v0.0.1 文档</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -42,7 +42,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">I2C子系统</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="i2c_res.html">I2C调试资源</a></li>
 <li class="toctree-l2"><a class="reference internal" href="i2c_info.html">1.3寸TFTLCD液晶屏V2 240*240</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">I2C命令行调试</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">I2C调试</a></li>
 </ul>
 </li>
 </ul>
@@ -66,7 +66,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">I2C子系统</a> &raquo;</li>
-      <li>I2C命令行调试</li>
+      <li>I2C调试</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/i2c/i2c_dbg.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
@@ -77,70 +77,11 @@
            <div itemprop="articleBody">
              
   <section id="i2c">
-<h1>I2C命令行调试<a class="headerlink" href="#i2c" title="永久链接至标题"></a></h1>
-<section id="i2c-tools">
-<h2>1. 测试是否安装i2c-tools<a class="headerlink" href="#i2c-tools" title="永久链接至标题"></a></h2>
-<p>在命令行中输入i2c后按TAB键会显示i2c-tools的各种工具表示已经安装好i2c-tools, 否则先到前面的章节来学习如何安装i2c-tools</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ i2c + TAB键
-i2cdetect  i2cdump    i2cget     i2cset
-</pre></div>
-</div>
-<section id="id1">
-<h3>模块使用资料<a class="headerlink" href="#id1" title="永久链接至标题"></a></h3>
-<ul class="simple">
-<li><p>资料链接：<a class="reference external" href="https://pan.baidu.com/s/17xa56rYprRqm8r9dsHjp7A">https://pan.baidu.com/s/17xa56rYprRqm8r9dsHjp7A</a></p></li>
-<li><p>提取码：bxfb</p></li>
-</ul>
-</section>
-<section id="id2">
-<h3>产品讨论帖<a class="headerlink" href="#id2" title="永久链接至标题"></a></h3>
-<ul class="simple">
-<li><p>1.3寸TFTLCD液晶屏V2模块240*240产品讨论贴: <a class="reference external" href="http://www.openedv.com/thread-329015-1-1.html">http://www.openedv.com/thread-329015-1-1.html</a></p></li>
-</ul>
-</section>
-</section>
-<section id="id3">
-<h2>产品图片<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
-<ul class="simple">
-<li><p>1.3寸TFTLCD液晶屏V2模块240*240主图如下所示</p></li>
-</ul>
-<figure class="align-default" id="id7">
-<span id="pic-major-1-3tftlcd"></span><img alt="i2c/media/1_3TFTLCD.png" src="i2c/media/1_3TFTLCD.png" />
-<figcaption>
-<p><span class="caption-text">1.3寸TFTLCD液晶屏V2模块240*240实物图正面</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="id8">
-<span id="pic-major-1-3tftlcdb"></span><img alt="i2c/media/1_3TFTLCDb.png" src="i2c/media/1_3TFTLCDb.png" />
-<figcaption>
-<p><span class="caption-text">1.3寸TFTLCD液晶屏V2       模块240*240实物图背面</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id4">
-<h2>购买方式<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
-<ul class="simple">
-<li><p>正点原子官方淘宝店：<a class="reference external" href="https://openedv.taobao.com">https://openedv.taobao.com</a></p></li>
-</ul>
-</section>
-<section id="id5">
-<h2>产品问题答疑<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
-<ul class="simple">
-<li><p>阿里旺旺：<a class="reference external" href="https://openedv.taobao.com">https://openedv.taobao.com</a> 上淘宝直接一对一咨询技术。</p></li>
-<li><p>开源电子网【论坛】：<a class="reference external" href="http://www.openedv.com/forum.php">http://www.openedv.com/forum.php</a></p></li>
-<li><p>QQ群：<a class="reference external" href="http://www.openedv.com/forum.php">http://www.openedv.com/forum.php</a>   点击首页“官方QQ群”即可加入最新群。</p></li>
-<li><p>微信群：<a class="reference external" href="http://www.openedv.com/forum.php">http://www.openedv.com/forum.php</a> 点击首页“微信群”即可加入最新群。</p></li>
-</ul>
-</section>
-<section id="id6">
-<h2>关于正点原子<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
-<blockquote>
-<div><div class="line-block">
-<div class="line"><span class="xref std std-ref">公司简介</span></div>
-<div class="line"><span class="xref std std-ref">联系方式</span></div>
-</div>
-</div></blockquote>
-</section>
+<h1>I2C调试<a class="headerlink" href="#i2c" title="永久链接至标题"></a></h1>
+<p>查看当前系统中所有的i2c-adapter
+查看i2c-adapter挂载的所有设备
+控制i2c-adapter读设备
+控制i2c-adapter写设备</p>
 </section>
 
 
